@@ -30,16 +30,10 @@ setup(
         'Topic :: Internet :: WWW/HTTP',
         'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
     ],
-    install_requires= [
-        'Django',
+    install_requires=[
         'Pygments',
         'six',
-        'simplejson',
-        'python-dateutil',
-        'requests',
         'sqlparse',
-        'Jinja2',
-        'autopep8',
         'pytz'
     ]
 )
