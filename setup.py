@@ -34,6 +34,8 @@ setup(
         'Pygments',
         'six',
         'sqlparse',
-        'pytz'
+        'pytz',
+        'autopep8',
+        'jinja2'
     ]
 )
