@@ -34,7 +34,7 @@ class SilkyCursorWrapper(CursorWrapper):
     def execute(self, sql, params=()):
         tb = ''.join(reversed(traceback.format_stack()))
         try:
-            sql_query = sql % params
+            sql_query = sql % tuple(params)
         except UnicodeDecodeError as ex:
             # TODO: investigate error.
             Logger.error('Exception while applying query parameters to record a query.')
